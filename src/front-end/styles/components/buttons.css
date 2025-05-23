@@ -1,0 +1,31 @@
+.btn {
+    @apply relative table cursor-pointer rounded-md px-6 py-2 text-center font-sans leading-normal tracking-wider text-balance no-underline shadow transition duration-300 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.btn-blue {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-green {
+    @apply bg-green-600 text-white hover:bg-green-700;
+}
+
+.btn-purple {
+    @apply text-shadow border border-purple-800 bg-purple-700 text-white hover:bg-purple-800;
+}
+
+.btn-orange {
+    @apply text-shadow bg-orange-600 text-white hover:bg-orange-700;
+}
+
+.btn-yellow {
+    @apply text-shadow bg-amber-400 text-white hover:bg-amber-500;
+}
+
+.btn-gray {
+    @apply border border-gray-400/40 bg-gray-300 text-gray-900 hover:bg-gray-400;
+}
+
+.btn-red {
+    @apply text-shadow border border-red-800 bg-red-700 text-gray-50 hover:bg-red-800;
+}

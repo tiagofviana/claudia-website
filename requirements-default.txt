@@ -1,0 +1,4 @@
+Django==5.2
+python-dotenv==1.1.0
+qrcode==8.2
+whitenoise==6.9.0

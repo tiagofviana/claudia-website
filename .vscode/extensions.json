@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "jock.svg",
+    "vscode-icons-team.vscode-icons",
+    "christian-kohler.npm-intellisense",
+  ]
+}

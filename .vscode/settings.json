@@ -1,0 +1,28 @@
+{
+    "editor.fontSize": 18,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "package.json": "package-lock.json, tsconfig.json, eslint*, prettier*, esbuild*, .prettier*",
+        ".gitignore": ".gitattributes, README.md",
+        "requirements-dev.txt": "requirements*.txt"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    "scm.inputFontSize": 16,
+    "workbench.tree.indent": 28,
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.statusBar.visible": true,
+    "editor.wordWrap": "bounded",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 100,
+    "svg.preview.mode": "svg",
+    "explorer.confirmDelete": true,
+    "editor.detectIndentation": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.autoReveal": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.configPath": ".prettierrc.json"
+}
