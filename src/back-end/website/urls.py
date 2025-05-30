@@ -4,7 +4,7 @@ from django.urls import path, include
 from django.conf import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path("", include("apps.core.urls")),
     path("", include("apps.spa.urls")), # this must be the last
 ]

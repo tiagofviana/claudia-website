@@ -101,6 +101,7 @@ const default_option = {
     loader: {
         '.png': 'file',
         '.jpg': 'file',
+        '.svg': 'file',
     },
 }
 
