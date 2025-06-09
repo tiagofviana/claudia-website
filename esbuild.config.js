@@ -95,14 +95,6 @@ const default_option = {
     format: 'esm',
     logLevel: 'silent',
     plugins: [style_plugin, logger_plugin],
-    entryNames: '[dir]/[name].min',
-    chunkNames: 'bundled-chunks/[name]-[hash].min',
-    assetNames: 'bundled-assets/[name]-[hash]',
-    loader: {
-        '.png': 'file',
-        '.jpg': 'file',
-        '.svg': 'file',
-    },
 }
 
 const options = [
@@ -113,9 +105,23 @@ const options = [
         },
         entryPoints: ['src\\front-end\\spa\\main.ts'],
         splitting: true,
-        outdir: '.\\src\\back-end\\apps\\spa\\static\\spa\\_js\\index\\',
-        publicPath: '/static/spa/_js/index',
+        outdir: '.\\src\\back-end\\apps\\spa\\static\\spa\\_js\\index\\spa\\',
+        publicPath: '/static/spa/_js/index/spa',
         plugins: [...default_option.plugins, outdir_cleaner_plugin, vuePlugin()],
+        entryNames: '[dir]/[name].min',
+        chunkNames: 'bundled-chunks/[name]-[hash].min',
+        assetNames: 'bundled-assets/[name]-[hash]',
+        loader: {
+            '.png': 'file',
+            '.jpg': 'file',
+            '.svg': 'file',
+        },
+    },
+
+    {
+        ...default_option,
+        entryPoints: ['src\\back-end\\apps\\spa\\static\\spa\\_js\\index\\loader\\loader.ts'],
+        outfile: 'src\\back-end\\apps\\spa\\static\\spa\\_js\\index\\loader\\loader.min.js',
     },
 ]
 

@@ -1,5 +1,5 @@
 .btn {
-    @apply relative table cursor-pointer rounded-md px-6 py-2 text-center font-sans leading-normal tracking-wider text-balance no-underline shadow transition duration-300 disabled:cursor-not-allowed disabled:opacity-60;
+    @apply relative table cursor-pointer rounded-full px-6 py-2 text-center font-sans font-serif leading-normal tracking-wider text-balance no-underline transition-all duration-200 hover:shadow-lg active:shadow-none disabled:cursor-not-allowed disabled:opacity-60;
 }
 
 .btn-blue {
@@ -19,11 +19,11 @@
 }
 
 .btn-yellow {
-    @apply text-shadow bg-amber-400 text-white hover:bg-amber-500;
+    @apply text-shadow bg-yellow-200 text-black/50 hover:bg-yellow-300;
 }
 
-.btn-gray {
-    @apply border border-gray-400/40 bg-gray-300 text-gray-900 hover:bg-gray-400;
+.btn-brown {
+    @apply border bg-amber-900 text-white hover:bg-amber-800;
 }
 
 .btn-red {

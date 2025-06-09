@@ -1,9 +1,7 @@
 * {
-    @apply font-default m-0 box-border p-0 outline-hidden;
+    @apply m-0 box-border p-0 font-sans text-base outline-hidden select-none;
 }
-html {
-    scroll-behavior: initial;
-}
+
 body {
     @apply overflow-y-scroll;
 }

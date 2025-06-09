@@ -53,25 +53,25 @@ export default defineComponent({
     <header
         @click="toggleHeader"
         :class="{ 'is-open': is_menu_open }"
-        class="fixed z-60 top-0 right-0 group transition-[background] delay-200 duration-600 ease-in-out [&.is-open]:h-dvh [&.is-open]:w-dvw [&.is-open]:bg-black/80"
+        class="group fixed top-0 right-0 z-60 transition-[background] delay-200 duration-600 ease-in-out [&.is-open]:h-dvh [&.is-open]:w-dvw [&.is-open]:bg-black/80"
     >
         <div
-            class="absolute top-0 right-0 bg-gray-100 border-l border-b border-gray-300 shadow-lg w-16 h-16 rounded-bl-full overflow-hidden transition-[width,height] duration-700 ease-in-out group-[.is-open]:w-56 group-[.is-open]:h-dvh group-[&.is-open]:rounded-bl"
+            class="absolute top-0 right-0 h-16 w-16 overflow-hidden rounded-bl-full border-b border-l border-gray-300 bg-gray-100 shadow-lg transition-[width,height] duration-700 ease-in-out group-[&.is-open]:rounded-bl group-[.is-open]:h-dvh group-[.is-open]:w-56"
         >
             <button
                 @click="toggleMenu"
                 aria-label="Hubuerguer do menu"
-                class="table ml-auto size-16 p-2 cursor-pointer hover:scale-110 transition-all"
+                class="ml-auto table size-16 cursor-pointer p-2 transition-all hover:scale-105"
             >
-                <div class="ml-auto -mt-4 w-8">
+                <div class="-mt-4 ml-auto w-8">
                     <span
-                        class="block h-1 bg-blue-950 rounded-full transition-all duration-700 group-[.is-open]:rotate-225 group-[.is-open]:mt-2"
+                        class="block h-1 rounded-full bg-blue-950 transition-all duration-700 group-[.is-open]:mt-2 group-[.is-open]:rotate-225"
                     ></span>
                     <span
-                        class="block h-1 bg-blue-950 mt-1.5 rounded-full transition-all duration-700 group-[.is-open]:-rotate-45 group-[.is-open]:-mt-1"
+                        class="mt-1.5 block h-1 rounded-full bg-blue-950 transition-all duration-700 group-[.is-open]:-mt-1 group-[.is-open]:-rotate-45"
                     ></span>
                     <span
-                        class="block h-1 bg-blue-950 mt-1.5 rounded-full transition-all duration-700 group-[.is-open]:-rotate-45 group-[.is-open]:-mt-1"
+                        class="mt-1.5 block h-1 rounded-full bg-blue-950 transition-all duration-700 group-[.is-open]:-mt-1 group-[.is-open]:-rotate-45"
                     ></span>
                 </div>
             </button>

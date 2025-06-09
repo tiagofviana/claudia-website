@@ -1,13 +1,11 @@
-<script setup lang="ts">
-import Footer from '@/components/Footer.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <h1>Contato</h1>
+    <section>
+        <h1>Contato</h1>
 
-    <div role="form" aria-label="Formulário para entrar em contato">
-        <input type="text" name="" />
-    </div>
-
-    <Footer></Footer>
+        <div role="form" aria-label="Formulário para entrar em contato">
+            <input type="text" name="" />
+        </div>
+    </section>
 </template>

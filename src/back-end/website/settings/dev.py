@@ -19,6 +19,8 @@ INTERNAL_IPS = [
 # URLS that TOOLBAR will ignore
 DEBUG_TOOLBAR_CONFIG = {
     "SHOW_TOOLBAR_CALLBACK": lambda request: not any(
-        str(path) in request.path for path in []
+        str(path) in request.path for path in [
+            reverse_lazy('spa:index')
+        ]
     ),
 }

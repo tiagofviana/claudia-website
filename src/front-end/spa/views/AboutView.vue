@@ -1,8 +1,12 @@
-<script setup lang="ts">
-import Footer from '@/components/Footer.vue'
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+    components: {},
+})
 </script>
 
 <template>
-    <h1>Sobre</h1>
-    <Footer></Footer>
+    <section>
+        <h1>Sobre</h1>
+    </section>
 </template>
